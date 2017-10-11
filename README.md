@@ -1,5 +1,7 @@
 # Programación 2017
 
+![Unidad didáctica 2](https://img.shields.io/badge/UD-2-green.svg)
+
 Primer _pack_ de ejercicios para empezar a escribir código en Java.
 
 ## IntelliJ y GitHub
