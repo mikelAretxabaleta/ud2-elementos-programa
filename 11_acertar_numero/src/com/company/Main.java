@@ -14,13 +14,17 @@ public class Main {
         Random r = new Random();
         int random = r.nextInt(101);
 
-        int n;
+        String resp;
+
 
         do {
 
-            System.out.print("Elige un número entre 0 y 100: ");
+            System.out.print("Elige un número entre 0 y 100 (o escribe FIN para terminar): ");
 
-            n = Integer.parseInt(br.readLine());
+            resp=br.readLine();
+
+            if (!resp.equalsIgnoreCase("fin"))
+            int n = Integer.parseInt(resp);
 
             if (n == random) {
                 System.out.println("Has acertado!!!");
@@ -32,7 +36,7 @@ public class Main {
                 }
             }
 
-        } while (n != random);
+        } while (n != random || !resp.equalsIgnoreCase("fin"));
 
 
     }

@@ -14,7 +14,7 @@ public class Main {
 
         int numero=Integer.parseInt(br.readLine());
 
-        if (numero==0 || numero>0){
+        if (numero>=0){
             System.out.println("El número es: "+numero);
         }
         else {

@@ -12,12 +12,12 @@ public class Main {
 
         System.out.print("Escribe un número: ");
 
-        int texto = Integer.parseInt(br.readLine());
+        int numero = Integer.parseInt(br.readLine());
 
-        if (texto % 2 == 0){
-            System.out.println(texto + " es par.");
+        if (numero % 2 == 0){
+            System.out.println(numero + " es par.");
         }
-        else System.out.println(texto + " es impar.");
+        else System.out.println(numero + " es impar.");
 
 
     }

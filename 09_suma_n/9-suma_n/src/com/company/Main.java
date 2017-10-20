@@ -14,19 +14,19 @@ public class Main {
 
         int n = Integer.parseInt(br.readLine());
 
-        int suma = 0, i = 0;
+        int suma = 0;
 
-        do {
-            System.out.println("Introduce un número: ");
+        for (int i = 0; i < n; i++) {
+
+
+            System.out.print("Introduce un número: ");
 
             int numero = Integer.parseInt(br.readLine());
 
             suma += numero;
 
-            i++;
-        }while (n>i);
-
-        System.out.println("La suma de "+n+"números es "+suma);
+        }
+        System.out.println("La suma de los "+n+" números es "+suma);
 
 
     }
