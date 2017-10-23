@@ -15,6 +15,7 @@ public class Main {
         int random = r.nextInt(101);
 
         String resp;
+        int n=0;
 
 
         do {
@@ -23,20 +24,27 @@ public class Main {
 
             resp=br.readLine();
 
-            if (!resp.equalsIgnoreCase("fin"))
-            int n = Integer.parseInt(resp);
+            if (resp.equalsIgnoreCase("fin")) {
 
-            if (n == random) {
-                System.out.println("Has acertado!!!");
-            } else {
-                if (n > random) {
-                    System.out.println("Te has pasado...");
+                System.out.println("Adios!!!!");
+
+            }
+            else {
+                n = Integer.parseInt(resp);
+
+
+                if (n == random) {
+                    System.out.println("Has acertado!!!");
                 } else {
-                    System.out.println("No llegas...");
+                    if (n > random) {
+                        System.out.println("Te has pasado...");
+                    } else {
+                        System.out.println("No llegas...");
+                    }
                 }
             }
 
-        } while (n != random || !resp.equalsIgnoreCase("fin"));
+        } while (n != random && !resp.equalsIgnoreCase("fin"));
 
 
     }
