@@ -7,18 +7,25 @@ import java.io.InputStreamReader;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.print("Introduce un numero: ");
+        boolean esPrimo = true;
+
+        System.out.print("Escribe un número: ");
         int numero = Integer.parseInt(br.readLine());
 
 
-        for (int i = numero - 1; i > 0; i--) {
+        for (int i = numero-1; i > 2 && esPrimo; i--) {
 
-            numero = numero * i;
+
+            if (numero % i == 0) {
+                System.out.println("No es primo");
+                esPrimo = false;
+            }
 
         }
-        System.out.println(numero);
+
+        if (esPrimo) System.out.println("Es primo");
+
     }
 }
